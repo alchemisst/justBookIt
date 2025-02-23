@@ -150,7 +150,7 @@ function App() {
               ))}
             </div>
 
-            <div className=" bg-secondary px-10 py-4 shadow-[8px_8px_0px_#FFF9BF] font-bold">
+            <div className=" bg-secondary px-10 py-4 shadow-[8px_8px_0px_#FFF9BF] font-bold text-center space-y-2">
               <h1 className="text-[#fffff0] text-xl underline underline-offset-4">
                 Waiting List
               </h1>
