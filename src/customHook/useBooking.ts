@@ -7,8 +7,8 @@ interface Booking {
   timestamp: Date;
 }
 
-const TOTAL_SLOTS: number =
-  parseInt(import.meta.env.VITE_APP_TOTAL_SLOTS, 10) || 5;
+
+const TOTAL_SLOTS: number = parseInt(import.meta.env.VITE_APP_TOTAL_SLOTS || "5", 10);
 
 export default function useBooking() {
   const [availableSlots, setAvailableSlots] = useState(TOTAL_SLOTS);
