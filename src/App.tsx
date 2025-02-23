@@ -41,7 +41,7 @@ function App() {
     <>
       <div className="flex justify-center">
         <div className="max-w-7xl ">
-          <div className="flex m-6 justify-center">
+          <div className="flex m-6 justify-center text-center">
             <div className="bg-secondary px-10 py-4 shadow-[8px_8px_0px_#FFF9BF] font-bold">
               <h1 className="text-[#fffff0] text-xl">
                 Just Book It <span>- {availableSlots} Spots Left</span>
@@ -158,30 +158,6 @@ function App() {
                 <div className="flex space-x-2 items-center" key={person.id}>
                   <h1>{person.name}</h1>
                   <h1>{formatDate(person.timestamp)}</h1>
-                  <button
-                    className="cursor-pointer"
-                    onClick={() => {
-                      cancelBooking(person.id);
-                    }}
-                  >
-                    {" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      color="#000000"
-                      fill="none"
-                    >
-                      <path
-                        d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
                 </div>
               ))}
             </div>
